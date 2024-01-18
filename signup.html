@@ -81,7 +81,10 @@
             <p>Contact</p>
           </div>
           <div class="buttonContainer">
-            <div class="login" onclick="window.location.assign('/index.html')">
+            <div
+              class="login"
+              onclick="window.location.hostname === 'localhost' ? window.location.assign('/index.html') : window.location.assign('/Mandark_Technology_Assingment/')"
+            >
               Log In
             </div>
             <button class="loginButton" onclick="">Start new</button>
