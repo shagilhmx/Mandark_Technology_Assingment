@@ -49,7 +49,7 @@
       <div class="navWrapper">
         <button
           class="loginButton inside"
-          onclick="window.location.href += '/signup.html'"
+          onclick="window.location.hostname === 'localhost' ? window.location.assign('/signup.html') : window.location.assign('/Mandark_Technology_Assingment/signup.html')"
         >
           Log In
         </button>
