@@ -17,16 +17,12 @@
     />
     <meta
       property="og:url"
-      content="https://evanthasridurga.com/earthen-ambience/"
+      content="https://shagilhmx.github.io/Mandark_Technology_Assingment/"
     />
-    <meta property="og:site_name" content="Evantha" />
+    <meta property="og:site_name" content="Mandark" />
     <meta
       property="og:image"
-      content="https://evanthasridurga.com/wp-content/uploads/2023/04/Rectangle-5416-1.png"
-    />
-    <meta
-      property="article:modified_time"
-      content="2022-07-27T10:05:16+00:00"
+      content="https://github.com/shagilhmx/Mandark_Technology_Assingment/blob/main/share.png"
     />
     <meta property="og:image:width" content="686" />
     <meta property="og:image:height" content="800" />
@@ -36,16 +32,39 @@
     <meta name="twitter:data1" content="3 minutes" />
     <meta
       name="msapplication-TileImage"
-      content="https://evanthasridurga.com/wp-content/uploads/2022/09/Group-2.png"
+      content="https://github.com/shagilhmx/Mandark_Technology_Assingment/blob/main/share.png"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="icon" href="assets/images/Group-2.png" sizes="32x32" />
-    <link rel="icon" href="assets/images/Group-2.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="assets/images/Group-2.png" />
-    <meta name="msapplication-TileImage" content="assets/images/Group-2.png" />
+    <link rel="icon" href="./images/logo.png" sizes="32x32" />
+    <link rel="icon" href="./images/logo.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+    <meta name="msapplication-TileImage" content="./images/logo.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#000000" />
   </head>
 
   <body>
+    <!-- mobile nav bar -->
+    <div class="mobileNavBar">
+      <div class="navWrapper">
+        <button
+          class="loginButton inside"
+          onclick="window.location.assign('/signup.html')"
+        >
+          Log In
+        </button>
+        <div
+          class="navContainer"
+          onclick="this.parentNode.parentNode.classList.remove('show');document.querySelector('.hamburger').classList.remove('active')"
+        >
+          <p>Home</p>
+          <p>Features</p>
+          <p>Process</p>
+          <p>Discover</p>
+          <p>Feedback</p>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <!-- nav bar -->
       <div class="fixedHeader">
@@ -60,12 +79,20 @@
             <p>Discover</p>
             <p>Feedback</p>
           </div>
-          <button
-            class="loginButton"
-            onclick="window.location.assign('/signup.html')"
-          >
-            Log In
-          </button>
+          <div class="buttonWrapper">
+            <button
+              class="loginButton"
+              onclick="window.location.assign('/signup.html')"
+            >
+              Log In
+            </button>
+            <div
+              class="hamburger"
+              onclick="this.classList.toggle('active');document.querySelector('.mobileNavBar').classList.toggle('show')"
+            >
+              <span class="hamburger-line"></span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="section1">
@@ -162,7 +189,9 @@
             </p>
             <button>Learn More</button>
           </div>
-          <div class="right"></div>
+          <div class="right">
+            <img alt="graph" src="./images/graph.png" />
+          </div>
         </div>
       </div>
       <div class="section4">
